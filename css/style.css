@@ -1,0 +1,201 @@
+@charset "utf-8";
+/* CSS Document */
+body,html,*{
+	margin: 0;
+	padding: 0;
+	border: none;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+.container{
+	width: 80%;
+	margin: 0 auto;
+}
+/*Navigation*/
+#nav{
+    display: flex;
+	height: 190px;
+    background-color: rgb(255, 255, 255);
+    
+}
+#nav > div {
+    flex: 1;
+    /* background-color: #e0e0e0; */
+  }
+#nav .topnav{   
+	display: flex;
+	align-items: flex-start;
+	flex-wrap: wrap;
+	padding-top: 10px;
+	height: 60px;
+}
+#nav .topnav .left{
+	list-style-type: none;
+	display: flex;
+}
+#nav .topnav .left a{
+	display: block;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	padding: 5px;
+	border: 2px solid #000000;
+    background-color: #C70039;
+	border-radius: 50%;
+	margin: 5px 5px;
+	transition: 0.5s;
+    box-shadow: 5px 5px 20px #000000;  /*đổ bóng*/
+    transform: translateX(90px);
+}
+#nav .topnav .left a:hover{
+	background-color: #C70039;
+	border-radius: 8px;
+}
+#nav .topnav .left img{
+	width: 16px;
+	height: 16px;
+    background-color: #C70039;
+}
+        /*Right*/
+#nav .topnav .right{
+	list-style-type: none;
+	display: flex;
+	margin-left: auto;
+}
+#nav .topnav .right button{
+	display: block;
+	background: none;
+	outline: none;
+	height: 25px;
+	text-align: center;
+	cursor: pointer;
+	color: grey;
+	font-size: 12pt;
+    transform: translateX(-60px);
+}
+#nav .topnav .right img{
+	width: 20px;
+	height: 20px;
+    margin: 5px 5px;
+    transform: translate3d(-10px , +9px , 0)
+}
+
+/* Đăng xuất */
+/* #nav .topnav .right #btnlogout{
+	background-color: #fff;
+	color: #000;
+	list-style-type: none;
+	text-align: center;
+	height: 25px;
+	width: 100px;
+	line-height: 25px;
+	font-weight: bold;
+	border-radius: 8px;
+	display: none;
+	cursor: pointer;
+	margin: 0 auto;
+	animation: bottomup 0.5s;
+	z-index: 100;
+	
+} */
+/* #nav .topnav .right li:hover > #btnlogout{
+	display: block;
+}
+#nav .topnav .right li > #btnlogout:hover{
+	background-color: #ff4700;
+	color: #fff;
+} */
+    /*Nav Dưới */
+#nav .botnav{
+	display: flex;
+	height: 130px;
+    background-color: #C70039;
+    border-top: 1px solid black;
+}
+#nav .botnav .logo img{
+	height: 100px;
+    transform: translate3d(+50px , 10px ,0);
+}
+#nav .botnav .container{
+	width: 100%;
+	margin: 0 auto;
+}
+#nav .botnav .top{
+    height: 50%;
+}
+
+#nav .botnav .top .searchbox
+{
+    transform: translate3d(120px , 30px , 0);
+	padding: 10px
+	border-bottom: 10px solid #f000f0;
+}
+#nav .botnav .top .searchbox input{
+	width: 60%;
+	font-size: 25pt;
+	outline: none;
+    font-family: "Times New Roman";
+}
+#nav .botnav .top .searchbox button{
+	width: 5%;
+	background: none;
+	outline: none;
+	cursor: pointer;
+}
+#nav .botnav .top .searchbox button img{
+    height: 20px;
+}
+#nav .botnav .top .searchbox button img:hover{
+
+}
+#nav .botnav .top .bot-right{
+	list-style-type: none;
+	display: flex;
+}
+#nav .botnav .top .bot-right button{
+	display: block;
+	background: none;
+	outline: none;
+	height: 25px;
+	text-align: center;
+	cursor: pointer;
+	color: white;
+	font-size: 12pt;
+    padding-right: 50px;
+    transform: translateX(1080px);
+}
+#nav .botnav .top .bot-right img{
+	width: 30px;
+	height: 30px;
+}
+  /* Phần trang chú , lambo.....*/
+#nav .botnav .bot
+{
+    height: 50%;
+}
+#nav .botnav .bot #btnmenu{
+	display: none;
+}
+#nav .botnav .bot #navmenu{
+	margin-left: auto;
+	list-style-type: none;
+	display: flex;
+}
+#nav .botnav .bot #navmenu a{
+	text-decoration: none;
+	color: #000000;
+	font-size: 14pt;
+	font-weight: 600;
+	display: block;
+	padding-top: 10px;
+	min-width: 60px;
+	text-align: center;
+	height: 100%;
+    transform: translateX(100px);
+	margin: 10px 20px;
+	transition: 0.4s;
+}
+#nav .botnav .bot #navmenu a:hover{
+	border-bottom: 2px solid #ffffff;
+	padding-top: 4px;
+}

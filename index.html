@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMS</title>
+    <link rel="shortcut icon" href="images/icon/favicon.ico">
+    <link rel="stylesheet" href="css/styleuser.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="showMenu();checklogin();">
+    <div id="nav">
+        <div class="container">
+            <div class="topnav">
+                <ul class="left">
+                    <li><a href="https://www.facebook.com/carmodelstore"><img src="images/icon/facebookicon.svg"></a>
+                    </li>
+                    <li><a href="https://www.instagram.com/carmodelstore"><img src="images/icon/instagramicon.svg"></a>
+                    </li>
+                    <li><a href="https://www.youtube.com"><img src="images/icon/youtubeicon.svg"></a></li>
+                </ul>
+
+                <ul class="right">
+                    <li><button onclick="showform()"><img src="images/icon/user-icon-svgrepo-com.svg">Sign In or
+                            Register</button></li>
+                </ul>
+            </div>
+            <div class="botnav">
+                <div class="logo"><a href="index.html"><img src="images/icon/logo.png" alt="CMS"></a></div>
+                <div><button id="btnmenu" onclick="shoMenuMobile()"</button></div>
+                <div class="container">
+                    <div class="top">
+                            <div class="searchbox">
+                                <input type="text" placeholder="Search the store" id="search" onKeyUp="search()"><button onclick="showextend()"><img src="images/icon/searchicon.svg"></button>
+                            </div>
+                            <div class="searchextend">
+
+                            </div>
+                            <div class="serachresult">
+
+                            </div>
+                        
+                        <ul class="bot-right">
+                            <li><button><img src="images/icon/heart.svg"></button></li>
+                            <li><button><img src="images/icon/carticon.svg"></button></li>
+                        </ul>
+                    </div>
+
+                    <div class="bot">
+                        <ul id="navmenu">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="user" class="modal">
+        <div id="login">
+            <form id="loginform">
+                <button type="button" class="close" onClick="closeform()">+</button>
+                <h2>ĐĂNG NHẬP</h2>
+                <div class="logininfo">
+                    <div class="col">
+                        <label for="usernameLogin">Tên đăng nhập:</label>
+                        <input type="text" id="usernameLogin">
+                        <div id="usernameerror">Bạn chưa nhập tên đăng nhập</div>
+                        <label for="passwordLogin">Mật khẩu:</label>
+                        <input type="password" id="passwordLogin">
+                        <div id="passwordloginerror">Bạn chưa nhập mật khẩu</div>
+                    </div>
+                </div>
+                <button type="submit" id="btnlogin">Login</button>
+                <p>Bạn chưa có tài khoản? <a href="#" onClick="showSignUp()">Đăng ký</a></p>
+            </form>
+        </div>
+        <div id="signup">
+            <form id="signupform">
+                <button type="button" class="close" onClick="closeform()">+</button>
+                <h2>ĐĂNG KÝ</h2>
+                <div class="signupinfo">
+                    <div class="col">
+                        <label for="fullname">Họ và tên: </label>
+                        <input type="text" id="fullname">
+                        <div id="fullnameerror">Bạn chưa nhập họ tên</div>
+                        <label for="address">Địa chỉ: </label>
+                        <input type="text" id="address">
+                        <div id="addresserror">Bạn chưa địa chỉ</div>
+                        <label for="phone">Số điện thoại: </label>
+                        <input type="text" id="phone">
+                        <div id="phoneerror">Bạn chưa nhập số điện thoại</div>
+                    </div>
+                    <div class="col">
+                        <label for="usernameSignUp">Tên đăng nhập: </label>
+                        <input type="text" id="usernameSignUp">
+                        <div id="usererror">Bạn chưa nhập tên đăng nhập</div>
+                        <label for="passwordSignUp">Mật khẩu: </label>
+                        <input type="password" id="passwordSignUp">
+                        <div id="passworderror">Bạn chưa nhập mật khẩu</div>
+                        <label for="passwordSignUp2">Nhập lại mật khẩu: </label>
+                        <input type="password" id="passwordSignUp2">
+                        <div id="password2error">Mật khẩu không trùng khớp</div>
+                    </div>
+                </div>
+                <button type="submit" id="btnsignup">Đăng ký</button>
+                <p>Trở về trang <a href="#" onClick="showLogin()">Đăng nhập</a></p>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="js/javascript.js"></script>
+</body>
+
+</html>
