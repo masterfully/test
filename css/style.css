@@ -44,15 +44,15 @@ body,html,*{
 	border-radius: 50%;
 	margin: 5px 5px;
 	transition: 0.5s;
-    box-shadow: 5px 5px 20px #000000;  /*đổ bóng*/
+    /*box-shadow: 5px 5px 50px #000000;  !*đổ bóng*!*/
     transform: translateX(90px);
 }
 #nav .topnav .left a:hover{
 	background-color: #C70039;
-	border-radius: 8px;
+	border-radius: 10px;
 }
 #nav .topnav .left img{
-	width: 16px;
+	width: 17px;
 	height: 16px;
     background-color: #C70039;
 }
@@ -81,30 +81,32 @@ body,html,*{
 }
 
 /* Đăng xuất */
-/* #nav .topnav .right #btnlogout{
-	background-color: #fff;
+ #nav .topnav .right #btnlogout{
+	background-color: #ffffff;
 	color: #000;
 	list-style-type: none;
+	 font-family: "Roboto Light";
 	text-align: center;
-	height: 25px;
+	height: 22px;
 	width: 100px;
 	line-height: 25px;
-	font-weight: bold;
+	font-weight: 400;
 	border-radius: 8px;
 	display: none;
 	cursor: pointer;
 	margin: 0 auto;
 	animation: bottomup 0.5s;
 	z-index: 100;
-	
-} */
-/* #nav .topnav .right li:hover > #btnlogout{
-	display: block;
+
+}
+ #nav .topnav .right li:hover > #btnlogout{
+	 display: block;
+	 font-size: 13pt;
 }
 #nav .topnav .right li > #btnlogout:hover{
-	background-color: #ff4700;
+	background-color: #C70039;
 	color: #fff;
-} */
+}
     /*Nav Dưới */
 #nav .botnav{
 	display: flex;
@@ -126,9 +128,9 @@ body,html,*{
 
 #nav .botnav .top .searchbox
 {
-    transform: translate3d(120px , 30px , 0);
-	padding: 10px
-	border-bottom: 10px solid #f000f0;
+    transform: translate3d(120px , 15px , 0);
+	padding: 10px ;
+	/*border-bottom: 10px solid #f00000;*/
 }
 #nav .botnav .top .searchbox input{
 	width: 60%;
@@ -143,11 +145,11 @@ body,html,*{
 	cursor: pointer;
 }
 #nav .botnav .top .searchbox button img{
-    height: 20px;
+    height: 25px;
 }
-#nav .botnav .top .searchbox button img:hover{
+/*#nav .botnav .top .searchbox button img:hover{*/
 
-}
+/*}*/
 #nav .botnav .top .bot-right{
 	list-style-type: none;
 	display: flex;
@@ -156,13 +158,10 @@ body,html,*{
 	display: block;
 	background: none;
 	outline: none;
-	height: 25px;
-	text-align: center;
 	cursor: pointer;
-	color: white;
-	font-size: 12pt;
+	/*color: white;*/
     padding-right: 50px;
-    transform: translateX(1080px);
+    transform: translate3d(1080px, -25px , 0);
 }
 #nav .botnav .top .bot-right img{
 	width: 30px;

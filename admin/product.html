@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quản lí</title>
+    <link rel="shortcut icon" href="../images/icon/favicon.ico">
+    <link rel="stylesheet" href="../css/adminstyle.css">
+</head>
+<body onLoad="showProductList(0);hello()">
+<div id="wrap">
+    <div id="leftmenu"  class="">
+        <div class="logo"><img src="../images/icon/logo.png" alt="CMS"></div>
+        <ul>
+            <li><img src="../images/icon/home.svg"><a href="../index.html">Trang chủ</a></li>
+            <li><img src="../images/icon/present-svgrepo-com.svg"><a href="product.html">Sản phẩm</a></li>
+            <li><img src="../images/icon/bill.svg"><a href="bill.html">Đơn hàng</a></li>
+            <li><img src="../images/icon/multiple-users.svg"><a href="user.html">Khách hàng</a></li>
+            <li><img src="../images/icon/map.svg"><a href="#">Quản lí thông tin</a></li>
+        </ul>
+    </div>
+    <div id="maincontent">
+        <div id="nav">
+            <div id="hello">
+            </div>
+        </div>
+        <div id="content">
+            <div id="leftsection">
+                <div id="maintable">
+                    <h1>DANH SÁCH SẢN PHẨM</h1>
+                    <table id="productlist">
+                    </table>
+                    <div id="pagination"></div>
+                </div>
+            </div>
+            <div id="rightsection">
+                <div class="subsection">
+                    <h1>TÌM KIẾM<KIẾM></KIẾM></h1>
+                    <form onkeyup="searchproduct()" onchange="searchproduct()">
+                        <label for="searchproductname">Tên sản phẩm</label>
+                        <input type="text" id="searchproductname">
+                        <label for="searchproductbrand">Thương hiệu</label>
+                        <select id="searchproductbrand">
+                            <option value="all" selected>TẤT CẢ</option>
+                            <option value="toyota">TOYOTA</option>
+                            <option value="lamborghini">LAMBORGHINI</option>
+                            <option value="mclaren">MCLAREN</option>
+                            <option value="porsche">PORSCHE</option>
+                            <option value="ferrari">FERRARI</option>
+
+                        </select>
+                    </form>
+                </div>
+                <div class="subsection">
+                    <h1>THÊM SẢN PHẨM</h1>
+                    <form>
+                        <label for="productname">Tên sản phẩm</label>
+                        <input type="text" id="productname">
+                        <label for="brand">Thương hiệu:</label>
+                        <select id="brand">
+                            <option value="toyota">TOYOTA</option>
+                            <option value="lamborghini">LAMBORGHINI</option>
+                            <option value="mclaren">MCLAREN</option>
+                            <option value="porsche">PORSCHE</option>
+                            <option value="ferrari">FERRARI</option>
+                        </select><br>
+                        <label for="productprice">Giá</label>
+                        <input type="text" id="productprice">
+                        <img id="imgadd" src="../images/product/temp2.jpg">
+                        <label >Ảnh</label>
+                        <input type="file" onchange="changeimgadd(this)"><br>
+                        <button type="reset">Xóa</button>
+                        <button type="button" onClick="addProduct()">Thêm</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal1" class="modal">
+        <div id="changeproduct">
+            <button class="close" onclick="closechangebox()">&times;</button>
+            <div class="image">
+                <img id="imgbefore" src="">
+                <img id="imgafter" src="">
+            </div>
+            <div class="info">
+                <label for="name">Tên sản phẩm</label>
+                <input type="text" id="name" value="Vans Old Skool Otw Repeat"><br>
+                <label for="name">Giá</label>
+                <input type="text" id="price" value="1439000"><br>
+                <input type="file" id="fileimg" onchange="changeimg(this)">
+            </div>
+            <button id="save">Lưu chỉnh sửa</button>
+        </div>
+    </div>
+</div>
+<script src="../js/adminjs.js"></script>
+</body>
+</html>

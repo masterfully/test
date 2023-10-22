@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body onload="showMenu();checklogin();">
+<body onload="showMenu();checklogin()">
     <div id="nav">
         <div class="container">
             <div class="topnav">
@@ -29,11 +29,11 @@
             </div>
             <div class="botnav">
                 <div class="logo"><a href="index.html"><img src="images/icon/logo.png" alt="CMS"></a></div>
-                <div><button id="btnmenu" onclick="shoMenuMobile()"</button></div>
+                <div><button id="btnmenu" onclick="shoMenuMobile()"></button></div>
                 <div class="container">
                     <div class="top">
                             <div class="searchbox">
-                                <input type="text" placeholder="Search the store" id="search" onKeyUp="search()"><button onclick="showextend()"><img src="images/icon/searchicon.svg"></button>
+                                <input type="text" placeholder="" id="search" onKeyUp="search()"><button><img src="images/icon/searchicon.svg"></button>
                             </div>
                             <div class="searchextend">
 
@@ -44,7 +44,7 @@
                         
                         <ul class="bot-right">
                             <li><button><img src="images/icon/heart.svg"></button></li>
-                            <li><button><img src="images/icon/carticon.svg"></button></li>
+                            <li><button onclick="location.href='file/cart.html'"><img src="images/icon/carticon.svg"></button></li>
                         </ul>
                     </div>
 

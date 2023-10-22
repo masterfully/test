@@ -1,4 +1,4 @@
-
+createAdmin();
 // định dạng số tiền thành VND
 function currency(num) {
   return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1.") + " VND";
@@ -38,7 +38,7 @@ function showMenuMobile(){
 function createAdmin(){
 	if(localStorage.getItem('user')===null){
 		var userArray = [];
-		var user = {username: 'admin', password: 'admin', fullname: 'Đào Phú Duy Tân', address: '273 An Dương Vương, P3, Quận 5, TPHCM', phone: '0566490523' , datesignup: '23-11-1999'};
+		var user = {username: 'admin', password: 'admin', fullname: 'ĐÀO PHÚ DUY TÂN', address: '273 An Dương Vương, P3, Quận 5, TPHCM', phone: '0566490523' , datesignup: '23-11-1999'};
 		userArray.push(user);
 		localStorage.setItem('user',JSON.stringify(userArray));
 	}
@@ -191,15 +191,15 @@ function checklogin(){
 		var s='';
 		if(user.username=='admin'){
 			s = '<li><button onClick="window.location.href=\'admin/product.html\'"><img src="images/icon/settings.svg"></button></li>'+
-				'<li><button>'+user.fullname+'</button><button id="btnlogout" onClick="logout(\'index.html\')">LOGOUT</button></li>'+
-				'<li><button onClick="location.href=\'file/cart.html\'"><img src="images/icon/carticon.svg"></button></li>'+
-				'<li><button onClick="showSearch()"><img src="images/icon/searchicon.svg"></button></li>';
+				'<li><button>'+user.fullname+'</button><button id="btnlogout" onClick="logout(\'../index.html\')">LOGOUT</button></li>'+
+				'<li><button onClick="location.href=\'file/cart.html\'"></button></li>'+
+				'<li><button onClick="showSearch()"></button></li>';
 		}else{
-			s = '<li><button>'+user.fullname+'</button><button id="btnlogout" onClick="logout(\'index.html\')">LOGOUT</button></li>'+
-				'<li><button onClick="location.href=\'file/cart.html\'"><img src="images/icon/carticon.svg"></button></li>'+
-				'<li><button onClick="showSearch()"><img src="images/icon/searchicon.svg"></button></li>';
+			s = '<li><button>'+user.fullname+'</button><button id="btnlogout" onClick="logout(\'../index.html\')">LOGOUT</button></li>'+
+				'<li><button onClick="location.href=\'file/cart.html\'"></button></li>'+
+				'<li><button onClick="showSearch()"></button></li>';
 		}
-		document.querySelector('#nav .topnav ul.right').innerHTML = s;
+		document.querySelector('#nav .topnav   ul.right').innerHTML = s;
 	}
 }
 function checklogin2(){
