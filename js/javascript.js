@@ -19,7 +19,7 @@ function showMenu() {
   }
 }
 function showMenuMobile(){
-	var btn = document.getElementById('btnmenu');
+	var btn = document.getElementById("btnmenu");
 	if(btn.className==""){
 		document.getElementById('btnmenu').classList.add('show');
 		document.getElementById('btnmenu').innerHTML = '&times;' ;
@@ -191,11 +191,11 @@ function checklogin(){
 		var s='';
 		if(user.username=='admin'){
 			s = '<li><button onClick="window.location.href=\'admin/product.html\'"><img src="images/icon/settings.svg"></button></li>'+
-				'<li><button>'+user.fullname+'</button><button id="btnlogout" onClick="logout(\'../index.html\')">LOGOUT</button></li>'+
+				'<li><button>'+user.fullname+'</button><button id="btnlogout" onClick="logout(\'index.html\')">LOGOUT</button></li>'+
 				'<li><button onClick="location.href=\'file/cart.html\'"></button></li>'+
 				'<li><button onClick="showSearch()"></button></li>';
 		}else{
-			s = '<li><button>'+user.fullname+'</button><button id="btnlogout" onClick="logout(\'../index.html\')">LOGOUT</button></li>'+
+			s = '<li><button>'+user.fullname+'</button><button id="btnlogout" onClick="logout(\'index.html\')">LOGOUT</button></li>'+
 				'<li><button onClick="location.href=\'file/cart.html\'"></button></li>'+
 				'<li><button onClick="showSearch()"></button></li>';
 		}
@@ -219,3 +219,21 @@ function checklogin2(){
 		document.querySelector('#nav .topnav ul.right').innerHTML = s;
 	}
 }
+
+//slide
+
+//banner slideshow begin
+var slideIndex=0;
+automaticSlideshow();
+function automaticSlideshow(){
+	var i;
+	var slide=document.getElementsByClassName("slideShow");
+	for (i = 0; i < slide.length; i++) {
+		slide[i].style.display="none";
+	}
+	slideIndex++;
+	if(slideIndex>slide.length) {slideIndex=1}
+	slide[slideIndex-1].style.display="block";
+	setTimeout(automaticSlideshow,2000);
+}
+//banner slideshow end
