@@ -18,6 +18,8 @@ body{
     background-color: #C70039;
     position: fixed;
     transition: 0.5s;
+    border-top-right-radius: 16px;
+
 }
 #leftmenu .logo{
     width: 200px;
@@ -35,6 +37,8 @@ body{
     display: flex;
     list-style-type: none;
     border-bottom: 1px solid #b8b8b8;
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
 }
 #leftmenu ul li:last-child{
     border: none;
@@ -116,6 +120,11 @@ body{
 #nav #hello button:active{
     background-color: #fff;
     color: #2f3542;
+}
+#nav #logotop img{
+    height: 48px;
+    width: 48px;
+    transform: translateX(700px);
 }
 #content{
     width: 100%;

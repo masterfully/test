@@ -150,6 +150,10 @@ body,html,*{
 /*#nav .botnav .top .searchbox button img:hover{*/
 
 /*}*/
+#nav .botnav .top .bot-right{
+	list-style-type: none;
+	display: flex;
+}
 #nav .botnav .top .bot-right button{
 	display: block;
 	background: none;
