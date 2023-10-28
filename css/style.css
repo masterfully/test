@@ -136,7 +136,7 @@ body,html,*{
 	width: 60%;
 	font-size: 25pt;
 	outline: none;
-    font-family: "Times New Roman";
+	border-radius: 16px;
 }
 #nav .botnav .top .searchbox button{
 	width: 5%;
@@ -150,10 +150,6 @@ body,html,*{
 /*#nav .botnav .top .searchbox button img:hover{*/
 
 /*}*/
-#nav .botnav .top .bot-right{
-	list-style-type: none;
-	display: flex;
-}
 #nav .botnav .top .bot-right button{
 	display: block;
 	background: none;
@@ -164,8 +160,8 @@ body,html,*{
     transform: translate3d(1080px, -25px , 0);
 }
 #nav .botnav .top .bot-right img{
-	width: 30px;
-	height: 30px;
+	width: 60px;
+	height: 40px;
 }
   /* Phần trang chú , lambo.....*/
 #nav .botnav .bot

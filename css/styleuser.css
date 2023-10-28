@@ -40,16 +40,17 @@ body,html,*{
 	color: #C70039;
 }
 #login h2{
-	font-family: "Roboto Light";
+	font-family:  'Arial', sans-serif;
 	display: inline-block;
 	margin: 20px 0 10px 180px;
-	font-weight: 1000;
+	font-weight: 1200;
 }
 #login .logininfo{
 	display: flex;
 	justify-content: center;
 }
 #login label{
+	font-family: 'Lucida Handwriting' , Cursive;
 	display: block;
 	font-weight: bold;
 	font-size: 13pt;
@@ -60,6 +61,7 @@ body,html,*{
 	display: inline-block;
 	width: 250px;
 	border: 1px solid #ccc;
+	border-radius: 16px;
 	padding-left: 5px;
 	height: 40px;
 	line-height: 40px;
@@ -79,6 +81,9 @@ body,html,*{
 	padding: 5px;
 	display: none;
 	cursor: default;
+}
+#login #loginform form{
+	border-radius:  16px;
 }
 #login #btnlogin{
 	display: block;
@@ -142,14 +147,15 @@ body,html,*{
 	padding:  0 50px;
 }
 #signup h2{
-	font-family: "Times New Roman";
+	font-family: 'Arial', sans-serif;
 	display: inline-block;
-	margin: 20px 0 10px 40px;
+	margin: 20px 0 10px 290px;
 	padding-bottom: 10px;
-	border-bottom: 5px solid #000;
-	font-weight: 900;
+	font-weight: 1200;
+	font-size: 20pt;
 }
 #signup label{
+	font-family: 'Lucida Handwriting' , Cursive;
 	display: block;
 	font-weight: bold;
 	font-size: 13pt;
@@ -160,6 +166,7 @@ body,html,*{
 	display: inline-block;
 	width: 250px;
 	border: 1px solid #ccc;
+	border-radius: 16px;
 	padding-left: 5px;
 	height: 40px;
 	line-height: 40px;

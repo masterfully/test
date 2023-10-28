@@ -11,7 +11,7 @@ function hello(){
 function logout(){
     localStorage.removeItem('userlogin');
     localStorage.removeItem('cart');
-    location.href='index.html';
+    location.href='../index.html';
 }
 // function showProductList(vitri){
 //     var productArray = JSON.parse(localStorage.getItem('product'));

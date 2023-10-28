@@ -208,11 +208,11 @@ function checklogin2(){
 		var s='';
 		if(user.username=='admin'){
 			s = '<li><button onClick="window.location.href=\'../admin/product.html\'"><img src="../images/icon/settings.svg"></button></li>'+
-				'<li><button>'+user.fullname+'</button><button id="btnlogout" onClick="logout(\'../index.html\')">LOGOUT</button></li>'+
+				'<li><button>'+user.fullname+'</button><button id="btnlogout" onClick="logout(\'index.html\')">LOGOUT</button></li>'+
 				'<li><button onClick="location.href=\'../file/cart.html\'"><img src="../images/icon/carticon.svg"></button></li>'+
 				'<li><button onClick="showSearch()"><img src="../images/icon/searchicon.svg"></button></li>';
 		}else{
-			s = '<li><button>'+user.fullname+'</button><button id="btnlogout" onClick="logout(\'../index.html\')">LOGOUT</button></li>'+
+			s = '<li><button>'+user.fullname+'</button><button id="btnlogout" onClick="logout(\'index.html\')">LOGOUT</button></li>'+
 				'<li><button onClick="location.href=\'../file/cart.html\'"><img src="../images/icon/carticon.svg"></button></li>'+
 				'<li><button onClick="showSearch()"><img src="../images/icon/searchicon.svg"></button></li>';
 		}
