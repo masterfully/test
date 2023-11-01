@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="css/styleuser.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/styleslide.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-jDU6e2v5z5U5g5N5z5HG1v5X9O5p6U5O6U5l6e5v5a5E5z5M5z5j5v5G5v5H5z5y5x5y5v5A5w5b5j5q5e5p5o5g=="
+        crossorigin="anonymous" />
+
 </head>
 
 <body onload="showMenu();checklogin()">
@@ -119,154 +123,42 @@
             <img class="slideShow" src="images/banner/Bburago_Banner.png">
             <img class="slideShow" src="images/banner/F1_Carousel_Banner.png">
             <img class="slideShow" src="images/banner/Maisto_Banner_Bike_V2.png">
-            <img class="slideShow" src="images/banner/Banner_Modelcars.jpg">
+            <!-- <img class="slideShow" src="images/banner/Banner_Modelcars.jpg"> -->
         </div>
     </div>
     <div class="specialProducts">
         <ul class="specialProducts-tabs">
-            <li class="tab">
-                <a href="" class="tab-title">featured</a>
+            <li class="tab" id="featured">
+                <a class="tab-title">featured</a>
             </li>
-            <li class="tab">
-                <a href="" class="tab-title">bestselling</a>
+            <li class="tab" id="bestselling">
+                <a class="tab-title">bestselling</a>
             </li>
-            <li class="tab">
-                <a href="" class="tab-title">new</a>
+            <li class="tab new">
+                <a class="tab-title">new</a>
             </li>
         </ul>
-        <div class="specialProducts-list">
-            <div class="product">
-                <img src="https://cdn11.bigcommerce.com/s-hmjw8fgkuv/images/stencil/320w/products/9347/14925/Screenshot_2023-10-24_192943__84503.1698147325.png?c=1"
-                    alt="" class="product-image">
-                <div class="product-info">
-                    <h4 class="product-title">
-                        Spark Models Look Smart Ferrari 365 P2 No.21 4th 24H Daytona 1966 1/43 Model
-                    </h4>
-                    <p class="product-brand">Ferrari</p>
-                    <div class="product-price">£108.00</div>
-                </div>
+        <ul class="specialProducts-list">
+
+        </ul>
+    </div>
+    <div class="productInfor-container">
+        <div id="productInfor" class="productInfor">
+            <div class="image-container">
+                <img src="./images/product/ferrari/P0003.png" alt="">
             </div>
-            <div class="product">
-                <img src="https://cdn11.bigcommerce.com/s-hmjw8fgkuv/images/stencil/320w/products/9346/14923/Screenshot_2023-10-24_192916__63891.1698147154.png?c=1"
-                    alt="" class="product-image">
-                <div class="product-info">
-                    <h4 class="product-title">
-                        Spark Models Look Smart Ferrari 275 P2 No.22 24H Le Mans 1965 1/43 Model
-                    </h4>
-                    <p class="product-brand">Ferrari</p>
-                    <div class="product-price">£108.00</div>
-                </div>
+            <div class="close-button">
+                <p>+</p>
             </div>
-            <div class="product">
-                <img src="https://cdn11.bigcommerce.com/s-hmjw8fgkuv/images/stencil/320w/products/9345/14921/16__51868.1698080308.png?c=1"
-                    alt="" class="product-image">
-                <div class="product-info">
-                    <div class="product-title">
-                        Porsche 911 GT1 No.01 Rohr Motorsport
-                        1/43
-                    </div>
-                    <p class="product-brand">Ferrari</p>
-                    <div class="product-price">£108.00</div>
-                </div>
-            </div>
-            <div class="product">
-                <img src="https://cdn11.bigcommerce.com/s-hmjw8fgkuv/images/stencil/320w/products/9347/14925/Screenshot_2023-10-24_192943__84503.1698147325.png?c=1"
-                    alt="" class="product-image">
-                <div class="product-info">
-                    <h4 class="product-title">
-                        Spark Models Look Smart Ferrari 365 P2 No.21 4th 24H Daytona 1966 1/43 Model
-                    </h4>
-                    <p class="product-brand">Ferrari</p>
-                    <div class="product-price">£108.00</div>
-                </div>
-            </div>
-            <div class="product">
-                <img src="https://cdn11.bigcommerce.com/s-hmjw8fgkuv/images/stencil/320w/products/9347/14925/Screenshot_2023-10-24_192943__84503.1698147325.png?c=1"
-                    alt="" class="product-image">
-                <div class="product-info">
-                    <h4 class="product-title">
-                        Spark Models Look Smart Ferrari 365 P2 No.21 4th 24H Daytona 1966 1/43 Model
-                    </h4>
-                    <p class="product-brand">Ferrari</p>
-                    <div class="product-price">£108.00</div>
-                </div>
-            </div>
-            <div class="product">
-                <img src="https://cdn11.bigcommerce.com/s-hmjw8fgkuv/images/stencil/320w/products/9347/14925/Screenshot_2023-10-24_192943__84503.1698147325.png?c=1"
-                    alt="" class="product-image">
-                <div class="product-info">
-                    <h4 class="product-title">
-                        Spark Models Look Smart Ferrari 365 P2 No.21 4th 24H Daytona 1966 1/43 Model
-                    </h4>
-                    <p class="product-brand">Ferrari</p>
-                    <div class="product-price">£108.00</div>
-                </div>
-            </div>
-            <div class="product">
-                <img src="https://cdn11.bigcommerce.com/s-hmjw8fgkuv/images/stencil/320w/products/9347/14925/Screenshot_2023-10-24_192943__84503.1698147325.png?c=1"
-                    alt="" class="product-image">
-                <div class="product-info">
-                    <h4 class="product-title">
-                        Spark Models Look Smart Ferrari 365 P2 No.21 4th 24H Daytona 1966 1/43 Model
-                    </h4>
-                    <p class="product-brand">Ferrari</p>
-                    <div class="product-price">£108.00</div>
-                </div>
-            </div>
-            <div class="product">
-                <img src="https://cdn11.bigcommerce.com/s-hmjw8fgkuv/images/stencil/320w/products/9347/14925/Screenshot_2023-10-24_192943__84503.1698147325.png?c=1"
-                    alt="" class="product-image">
-                <div class="product-info">
-                    <h4 class="product-title">
-                        Spark Models Look Smart Ferrari 365 P2 No.21 4th 24H Daytona 1966 1/43 Model
-                    </h4>
-                    <p class="product-brand">Ferrari</p>
-                    <div class="product-price">£108.00</div>
-                </div>
-            </div>
-            <div class="product">
-                <img src="https://cdn11.bigcommerce.com/s-hmjw8fgkuv/images/stencil/320w/products/9347/14925/Screenshot_2023-10-24_192943__84503.1698147325.png?c=1"
-                    alt="" class="product-image">
-                <div class="product-info">
-                    <h4 class="product-title">
-                        Spark Models Look Smart Ferrari 365 P2 No.21 4th 24H Daytona 1966 1/43 Model
-                    </h4>
-                    <p class="product-brand">Ferrari</p>
-                    <div class="product-price">£108.00</div>
-                </div>
-            </div>
-            <div class="product">
-                <img src="https://cdn11.bigcommerce.com/s-hmjw8fgkuv/images/stencil/320w/products/9347/14925/Screenshot_2023-10-24_192943__84503.1698147325.png?c=1"
-                    alt="" class="product-image">
-                <div class="product-info">
-                    <h4 class="product-title">
-                        Spark Models Look Smart Ferrari 365 P2 No.21 4th 24H Daytona 1966 1/43 Model
-                    </h4>
-                    <p class="product-brand">Ferrari</p>
-                    <div class="product-price">£108.00</div>
-                </div>
-            </div>
-            <div class="product">
-                <img src="https://cdn11.bigcommerce.com/s-hmjw8fgkuv/images/stencil/320w/products/9347/14925/Screenshot_2023-10-24_192943__84503.1698147325.png?c=1"
-                    alt="" class="product-image">
-                <div class="product-info">
-                    <h4 class="product-title">
-                        Spark Models Look Smart Ferrari 365 P2 No.21 4th 24H Daytona 1966 1/43 Model
-                    </h4>
-                    <p class="product-brand">Ferrari</p>
-                    <div class="product-price">£108.00</div>
-                </div>
-            </div>
-            <div class="product">
-                <img src="https://cdn11.bigcommerce.com/s-hmjw8fgkuv/images/stencil/320w/products/9347/14925/Screenshot_2023-10-24_192943__84503.1698147325.png?c=1"
-                    alt="" class="product-image">
-                <div class="product-info">
-                    <h4 class="product-title">
-                        Spark Models Look Smart Ferrari 365 P2 No.21 4th 24H Daytona 1966 1/43 Model
-                    </h4>
-                    <p class="product-brand">Ferrari</p>
-                    <div class="product-price">£108.00</div>
-                </div>
+            <div class="infor-container">
+                <h2 class="product-title">Bburago F1 Ferrari F1-75 #16 (Charles Leclerc) 2022 Formula 1 Model Car 1/43
+                </h2>
+                <h4 class="product-price">Price: £11.99</h4>
+                <h4 class="quantity">quantity</h4>
+                <button class="quantity-decrease">-</button>
+                <input type="text" value="1" class="quantity-number">
+                <button class="quantity-increase">+</button>
+                <button class="addtocart">Add to cart</button>
             </div>
         </div>
     </div>
@@ -346,6 +238,9 @@
 
 
     <script src="js/javascript.js"></script>
+    <script src="js/productjs.js"></script>
 </body>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 </html>

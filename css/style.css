@@ -191,7 +191,8 @@ body {
 	padding-right: 50px;
 	transform: translate3d(1080px, -25px, 0);
 }
-#nav .botnav .top .bot-right img{
+
+#nav .botnav .top .bot-right img {
 	width: 30px;
 	height: 30px;
 }
@@ -499,17 +500,6 @@ body {
 
 
 
-.slider {
-	width: 1280px;
-	height: 340px;
-	background-color: #c9466b;
-}
-
-.slider img {
-	width: 100%;
-	height: 100%;
-}
-
 .specialProducts {
 	position: relative;
 	width: 1280px;
@@ -534,80 +524,276 @@ body {
 	display: block;
 	text-align: left;
 	height: 100%;
+	cursor: pointer;
 }
 
 .specialProducts .specialProducts-tabs li a {
 	text-decoration: none;
-	font-size: 24px;
-	font-weight: 500;
+	font-size: 18px;
+	font-weight: 600;
 	text-transform: capitalize;
 	color: #000;
 	margin: 50px;
+
 }
 
 .specialProducts .specialProducts-tabs li a:hover {
 	color: #C70039;
 }
 
-.specialProducts-list {
-	/* background-color: antiquewhite; */
-	position: relative;
-	top: 60px;
-}
-
-.specialProducts-list {
+ul.specialProducts-list {
+	position: absolute;
+	top: 80px;
 	display: flex;
 	flex-wrap: wrap;
-	margin-left: -28px;
+	padding: 30px;
+	list-style: none;
 }
 
-.product {
-	height: 33.333%;
-	padding-left: 28px;
-	padding-right: 28px;
-	width: calc(25% - 28px);
-	margin-left: 28px;
-	overflow: hidden;
-	/* background-color: #757575; */
+
+li.product {
+	width: calc(25% - 30px);
+	margin-left: 20px;
+	margin-bottom: 24px;
 	display: flex;
 	flex-direction: column;
+	cursor: pointer;
 }
 
-.product-image {
-	height: 200px;
+.product-img-container {
 	width: 100%;
-	object-fit: cover;
+	height: 240px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.product-img {
+	width: 90%;
+	margin-right: 30px;
+	display: block;
+	margin: 0px auto;
 	flex-shrink: 0;
+	/*không cho phép phần tử đó co lại*/
+
+}
+
+.product-botton {
+	margin-bottom: 8px;
+	padding: 4px 0;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-weight: 600;
+	width: 220px;
+	position: absolute;
+	left: calc((100% - 220px) / 2);
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #ffffff00;
+	background-color: #c7003800;
+}
+
+.product:hover {
+	.product-botton {
+		background-color: #2d2626;
+		color: #fff;
+	}
+}
+
+.view-botton {}
+
+.icon {
+	position: absolute;
+	left: 0px;
+	font-size: 18px;
+	line-height: 1px;
+	margin-left: 16px;
 }
 
 .product-info {
-	width: 100%;
+	height: 111px;
+	background-color: #b12704;
+	text-align: center;
+	flex: 1;
 }
 
-.product-title {
+.product-infor a {
+	width: 100%;
+	text-decoration: none;
 	color: #282828;
 	font-size: 14px;
-	font-weight: 700;
-	line-height: 17.5px;
+	display: inline-block;
 	text-align: center;
+	padding: 4px 0;
+}
+
+.product-infor .product-title:hover {
+	color: #C70039;
 }
 
 .product-brand {
-	color: #757575;
-	font-size: 14px;
-	line-height: 21px;
+	display: block;
 	text-align: center;
+	font-size: 14px;
+	color: #757575;
+	margin-bottom: 4px;
 }
 
-.product-price {
-	color: #941111;
-	font-size: 14px;
-	line-height: 21px;
+.product-infor .product-price {
 	text-align: center;
+	color: #b12704;
 	font-weight: 700;
 }
 
 
+/* bấm nút view hiện box thông tin sản phẩm */
+.productInfor-container {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 700px;
+	background-color: rgba(115, 95, 95, 0.5);
+	z-index: 1;
+	display: none;
+}
+#productInfor {
+	width: 1000px;
+	height: 550px;
+	background-color: #ffffff;
+	position: fixed;
+	top: calc((100% - 550px)/2);
+	left: calc((100% - 1000px)/2);
+	display: none;
+}
+.productInfor-container .productInfor.active {
+	display: inline-block;
+}
+
+
+
+#productInfor .image-container {
+	height: 100%;
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	margin-left: 10px;
+}
+
+#productInfor .image-container img {
+	width: 90%;
+	margin-right: 30px;
+	display: block;
+	margin: 0px auto;
+	flex-shrink: 0;
+	/*không cho phép phần tử đó co lại*/
+
+}
+
+#productInfor .infor-container {
+	width: 40%;
+	height: 100%;
+	position: absolute;
+	top: 10%;
+	right: 5%;
+}
+
+#productInfor .infor-container .product-title {
+	font-size: 30px;
+	padding-bottom: 10px;
+	border-bottom: 8px solid #C70039;
+}
+
+#productInfor .infor-container .product-price {
+	width: fit-content;
+	margin-top: 24px;
+	font-size: 24px;
+	padding-top: 24px;
+	padding-bottom: 6px;
+	border-bottom: 5px solid #C70039;
+}
+
+#productInfor .infor-container .quantity {
+	margin-top: 20px;
+	font-size: 20px;
+	padding-top: 20px;
+	text-transform: capitalize;
+	margin-bottom: 10px;
+}
+
+#productInfor .infor-container .quantity-decrease {
+	width: 50px;
+	height: 40px;
+	border-top: #000 solid 2px;
+	border-left: #000 solid 2px;
+	border-bottom: #000 solid 2px;
+	color: #C70039;
+}
+
+#productInfor .infor-container .quantity-increase {
+	width: 50px;
+	height: 40px;
+	border-top: #000 solid 2px;
+	border-right: #000 solid 2px;
+	border-bottom: #000 solid 2px;
+	color: #C70039;
+}
+
+#productInfor .infor-container .quantity-number {
+	width: 80px;
+	height: 40px;
+	text-align: center;
+	border: #000 solid 2px;
+	margin: 0 -4px;
+}
+#productInfor .infor-container .quantity-decrease,
+#productInfor .infor-container .quantity-increase,
+ #productInfor.infor-container.quantity-number {
+    font-weight: bold;
+}
+button.addtocart{
+	width: 160px;
+	height: 46px;
+	position: absolute;
+	bottom: 20%;
+	left: 0;
+	margin-bottom: 10px;
+	background-color: #C70039;
+	border: #000 solid 2px;
+}
+
+button.addtocart:hover {
+    background-color: #ffffff;
+    color: #C70039;
+}
+
+button {
+	cursor: pointer;
+
+}
+
+.close-button {
+	width: 60px;
+	height: 50px;
+	background-color: #ffffff;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	cursor: pointer;
+	color: #000;
+	font-size: 50px;
+	text-align: center;
+	overflow: hidden;
+}
+.close-button p {
+	transform: rotate(45deg);
+}
 
 
 
@@ -617,11 +803,14 @@ body {
 
 
 
+
+
+/*-----------------------------------------------------------------*/
 
 /* 3 bài viết */
 .post {
 	position: absolute;
-	bottom: 684px;
+	bottom: 600px;
 	left: 60px;
 	width: 1160px;
 	height: 640px;
