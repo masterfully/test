@@ -668,7 +668,6 @@ li.product {
 	position: fixed;
 	top: calc((100% - 550px)/2);
 	left: calc((100% - 1000px)/2);
-	display: none;
 }
 .productInfor-container .productInfor.active {
 	display: inline-block;
